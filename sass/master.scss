@@ -1,0 +1,51 @@
+$boxHeight: 200px;
+$boxWidth: 200px;
+
+@mixin boxSize {
+    width: $boxWidth;
+    height: $boxHeight;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    @include boxSize;
+    display: inline-block;
+     /* @include boxSize; */
+ }
+
+.green {
+     background-color: green;
+ }
+
+ .red {
+     background-color: red;
+ }
+
+ .blue {
+     background-color: blue;
+ }
+ .purple {
+     background-color: purple;
+ }
+ .orange {
+     background-color: orange;
+ }
+
+ #myForm {
+     padding-top: 20px;
+ }
+
+.wider {
+    width: $boxWidth+200px;
+}
+
+.higher {
+    height: $boxHeight+400px;
+}
+
+.listColor {
+    color: blue;
+}
